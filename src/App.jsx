@@ -1,15 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
+import Home from "./Components/Home/Home"
 
 function App() {
 
   return (
     <>
-    
-    <Container>
-      <h1>Proyecto React 2025</h1>
-    </Container>
-    
+      <Home/>
     </>
   )
 }
