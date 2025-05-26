@@ -7,12 +7,14 @@
 }
 
 .card {
+    width: 450px;
     margin: 50px;
 }
 
 .card img {
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 300px
+    
 }
 
 .card button {
@@ -29,4 +31,8 @@
 
 .card button:hover {
     opacity: 0.7;
+}
+
+.price {
+    font-size: 1.4em;
 }
