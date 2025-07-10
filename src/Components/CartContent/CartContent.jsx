@@ -1,11 +1,15 @@
-import './cartContent.css'
 import Navbar from "../Navbar/Navbar";
+import CartElements from "./CartElements";
+import CartTotal from "./CartTotal";
+import './CartContent.css'
+
 
 const CartContent = () => {
   return (
     <>
       <Navbar />
-      <h2 className="cartTitle">Carrito en construccion </h2>
+      <CartElements />
+      <CartTotal />
     </>
   );
 };
