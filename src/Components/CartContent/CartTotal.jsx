@@ -9,7 +9,7 @@ const CartTotal = () => {
 
   return (
     <div className="cartTotal">
-      <h3>Total a Pagar: {total}</h3>
+      <h2>Total a Pagar: 💲 <strong className="price">{total}</strong></h2>
     </div>
   )
 }

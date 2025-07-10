@@ -9,7 +9,7 @@ const Products = () => {
     const {cart, setCart} = useContext(Context)
 
      useEffect(() => {
-          fetch('https://api.escuelajs.co/api/v1/products')
+          fetch('https://fakestoreapi.com/products')
           .then((response)=>response.json())
           .then((data) => setProducts(data))
           .catch(error => console.error('Error:', error));
@@ -24,7 +24,7 @@ console.log(cart)
 return products.map((product) => {
       return (
     <div className="card" key={product.id}>
-        <img src={product.images[0]} alt="img-product-card" />
+        <img src={product.image} alt="img-product-card" />
         <h3>{product.title}</h3>
         <h4>💲 {product.price}</h4>
         <button onClick={() => buyProducts(product)}>Buy</button>
