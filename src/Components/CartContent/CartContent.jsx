@@ -1,4 +1,4 @@
-import './cartContent.css'
+import './CartContent.css'
 import Navbar from "../Navbar/Navbar";
 
 const CartContent = () => {
