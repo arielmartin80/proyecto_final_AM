@@ -1,21 +1,25 @@
- .product-card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 30px; 
+.product-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px;
 }
 
 .product-card-container > img {
-    height: 120px;
-    width: 100px;
-    text-align: right;
+  height: 120px;
+  width: 100px;
+  text-align: right;
 }
 
 .cartTotal {
-    text-align: center;
+  text-align: center;
 }
 
 .price {
-    color: green;
-    font-size: 1.25em;
+  color: green;
+  font-size: 1.25em;
+}
+
+.cart-delete-product {
+  cursor: pointer;
 }

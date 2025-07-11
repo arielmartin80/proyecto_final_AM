@@ -27,7 +27,7 @@ return products.map((product) => {
         <img src={product.image} alt="img-product-card" />
         <h3>{product.title}</h3>
         <h4>💲 {product.price}</h4>
-        <button onClick={() => buyProducts(product)}>Buy</button>
+        <button onClick={() => buyProducts(product)}>Agregar al carrito</button>
     </div>
   )
 })
