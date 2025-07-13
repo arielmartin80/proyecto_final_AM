@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar";
 import CartElements from "./CartElements";
 import CartTotal from "./CartTotal";
 import './CartContent.css'
@@ -6,11 +5,10 @@ import './CartContent.css'
 
 const CartContent = () => {
   return (
-    <>
-      <Navbar />
+    <div className="carts-list">
       <CartElements />
       <CartTotal />
-    </>
+    </div>
   );
 };
 

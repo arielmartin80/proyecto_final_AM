@@ -2,15 +2,23 @@
     position: sticky;
     z-index: 3;
     top: 0;
+    min-height: 12vh;
+    background-color: #1b1b1b;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     height: 10vh;
+    padding: 1.5em;
     background-color: #1b1b1b;
-    min-height: 3em;
 }
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .navbar a {
     text-decoration: none;
@@ -20,14 +28,20 @@
     justify-self: start;
     margin-left: 20px;
     color: white;
-    margin-top: 3vh;
     cursor: pointer;
 }
 
 .navbar-cart {
     font-size: 25px;
     margin-right: 20px;
-    margin-top: 2vh;
     cursor: pointer;
     text-decoration: none;
+}
+
+.navbar-admin {
+    font-size: 25px;
+    margin-right: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }

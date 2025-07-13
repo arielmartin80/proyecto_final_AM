@@ -1,4 +1,7 @@
 .footer-container {
   background-color: #1b1b1b;
-  height: 20vh;
+  min-height: 10vh;
+  width: 100%;
+  color: white;
+  text-align: center;
 }

@@ -17,7 +17,7 @@ const CartElements = () => {
 
   return cart.map((product) => {
     return (
-    <div className="product-card-container" key = {product.id}>
+    <div className="product-cart-container" key = {product.id}>
         <img src={product.image} alt="img-card" />
         <h3>{product.title}</h3>
         <h4 className="price">💲 {product.price}</h4>
@@ -28,6 +28,8 @@ const CartElements = () => {
     </div>
     )
   });
+
+
 };
 
 export default CartElements;

@@ -1,14 +1,7 @@
-.product-card-container {
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 50px;
-    text-align: center;
-}
-
 .card {
-    width: 450px;
+    width: 350px;
     margin: 50px;
+    position: relative;
 }
 
 .card img {
@@ -27,6 +20,8 @@
     cursor: pointer;
     width: 100%;
     font-size: 15px;
+    position: absolute;
+    bottom: -3em;
 }
 
 .card button:hover {

@@ -24,9 +24,9 @@ console.log(cart)
 return products.map((product) => {
       return (
     <div className="card" key={product.id}>
-        <img src={product.image} alt="img-product-card" />
-        <h3>{product.title}</h3>
-        <h4>💲 {product.price}</h4>
+        <img src={product.image} alt="img-product-card" className="mx-auto"/>
+        <h5>{product.title}</h5>
+        <h3>💲 {product.price}</h3>
         <button onClick={() => buyProducts(product)}>Agregar al carrito</button>
     </div>
   )
