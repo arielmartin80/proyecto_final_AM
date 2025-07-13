@@ -2,7 +2,7 @@
     position: sticky;
     z-index: 3;
     top: 0;
-    min-height: 12vh;
+    min-height: 6em;
     background-color: #1b1b1b;
 }
 

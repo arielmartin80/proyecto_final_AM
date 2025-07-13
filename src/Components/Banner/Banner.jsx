@@ -5,7 +5,7 @@ const Banner = () => {
     <div className="banner">
       <div className="banner-container">
         <h1>Free Shop</h1>
-        <p>The best place to buy anythink</p>
+        <p>El mejor lugar para comprar <br/>de todo</p>
       </div>
     </div>
   )

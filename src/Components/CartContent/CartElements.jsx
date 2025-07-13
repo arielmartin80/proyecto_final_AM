@@ -15,6 +15,8 @@ const CartElements = () => {
 
   }
 
+  console.log(cart)
+
   return cart.map((product) => {
     return (
     <div className="product-cart-container" key = {product.id}>

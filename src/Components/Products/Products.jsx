@@ -19,7 +19,7 @@ const Products = () => {
         setCart ([...cart, product])
      }
 
-console.log(cart)
+console.log(products)
     
 return products.map((product) => {
       return (

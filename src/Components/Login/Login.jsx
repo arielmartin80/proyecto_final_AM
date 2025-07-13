@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user === "admin" && pass === "1234") {
-      navigate("/crud");
+      navigate("/admin");
     } else {
       alert("Usuario o contraseña incorrectos");
     }
