@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Context } from "../../Context/Context";
 
 const CartElements = () => {
-  const { cart, setCart } = useContext(Context);
+  const { cart, setCart, products } = useContext(Context);
 
     const deleteProducts = (id) => {
     const foundId = cart.find((element) => element.id === id)
@@ -15,6 +15,7 @@ const CartElements = () => {
 
   }
 
+  console.log(products)
   console.log(cart)
 
   return cart.map((product) => {

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Button, Form, Modal } from 'react-bootstrap';
-import "./Admin.css"
 
-const API_URL = 'https://68489b9bec44b9f349416b0e.mockapi.io/api/productos';
+const API_URL = 'https://687030697ca4d06b34b62b2c.mockapi.io/products';
 
 const CrudProductos = () => {
   const [productos, setProductos] = useState([]);
@@ -69,9 +68,8 @@ const CrudProductos = () => {
 
   return (
     <div className="container mt-4">
-      <h2 className='adminTitle'>Administracion de Productos
+      <h2>CRUD de Productos</h2>
       <Button className="mb-3" onClick={() => handleShow()}>Agregar Producto</Button>
-      </h2>
       <Table striped bordered hover>
         <thead>
           <tr>

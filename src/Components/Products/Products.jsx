@@ -4,12 +4,16 @@ import "./products.css"
 
 const Products = () => {
 
-    const [products, setProducts] = useState([])
+    //const [products, setProducts] = useState([])
+
+    //Cargamos los productos desde el Context
+  const {products, setProducts} = useContext(Context)
 
     const {cart, setCart} = useContext(Context)
 
      useEffect(() => {
-          fetch('https://fakestoreapi.com/products')
+          //fetch('https://fakestoreapi.com/products')
+          fetch('https://687030697ca4d06b34b62b2c.mockapi.io/products')
           .then((response)=>response.json())
           .then((data) => setProducts(data))
           .catch(error => console.error('Error:', error));
