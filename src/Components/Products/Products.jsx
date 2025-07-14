@@ -27,7 +27,7 @@ const Products = () => {
     return (
       <div className="card" key={product.id}>
         <h4 className="ProductTitle">{product.title}</h4>
-        <img src={product.image} alt="img-product-card" className="my-auto" />
+        <img src={product.image} alt="img-product-card" className="mx-auto" />
         <h6>{product.description}</h6>
         <h3><strong className="pesos">💲</strong> <strong className="price">{product.price}</strong></h3>
         <button onClick={() => addToCart(product)}>Agregar al carrito</button>
