@@ -1,6 +1,7 @@
+import "./products.css";
 import { useState, useEffect, useContext } from "react";
 import { Context } from "../../Context/Context";
-import "./Products.css";
+
 
 const Products = () => {
   //const [products, setProducts] = useState([])
