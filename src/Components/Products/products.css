@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.ProductTitle {
+    margin-top: 1em;
+}
+
 .card img {
     width: 250px;
     height: 300px
@@ -31,4 +35,13 @@
 .price {
     font-size: 1.4em;
     margin-bottom: 10px;
+}
+
+.pesos {
+    font-size: 1em;
+}
+
+.price {
+    font-size: 2,5em;
+    top: 5px;
 }

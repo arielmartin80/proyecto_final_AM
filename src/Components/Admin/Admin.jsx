@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Button, Form, Modal } from 'react-bootstrap';
+import "./Admin.css"
 
 const API_URL = 'https://687030697ca4d06b34b62b2c.mockapi.io/products';
 
@@ -68,15 +69,14 @@ const CrudProductos = () => {
 
   return (
     <div className="container mt-4">
-      <h2>CRUD de Productos</h2>
-      <Button className="mb-3" onClick={() => handleShow()}>Agregar Producto</Button>
+      <h2 className='adminTitle'>Administración de Productos<Button className="" onClick={() => handleShow()}>Agregar Producto</Button></h2>
+      
       <Table striped bordered hover>
         <thead>
           <tr>
             <th>Título</th>
             <th>Descripción</th>
             <th>Precio</th>
-            <th>Stock</th>
             <th>Imagen</th>
             <th>Acciones</th>
           </tr>
@@ -87,7 +87,6 @@ const CrudProductos = () => {
               <td>{prod.title}</td>
               <td>{prod.description}</td>
               <td>${Number(prod.price).toFixed(2)}</td>
-              <td>{prod.stock}</td>
               <td>
                 {prod.image?.startsWith('http') ? (
                   <img src={prod.image} alt={prod.title} width={50} />
@@ -95,9 +94,9 @@ const CrudProductos = () => {
                   <span>{prod.image}</span>
                 )}
               </td>
-              <td>
-                <Button size="sm" onClick={() => handleShow(prod)}>Editar</Button>{' '}
-                <Button size="sm" variant="danger" onClick={() => eliminarProducto(prod.id)}>Eliminar</Button>
+              <td className='text-center'>
+                <Button size="sm" onClick={() => handleShow(prod)}>Editar&nbsp;</Button>{' '}
+                <Button size="sm" variant="danger" onClick={() => eliminarProducto(prod.id)}>Quitar</Button>
               </td>
             </tr>
           ))}
@@ -105,10 +104,13 @@ const CrudProductos = () => {
       </Table>
 
       <Modal show={show} onHide={handleClose}>
+
         <Modal.Header closeButton>
           <Modal.Title>{editId ? 'Editar' : 'Agregar'} Producto</Modal.Title>
         </Modal.Header>
+
         <Modal.Body>
+
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-2">
               <Form.Label>Título</Form.Label>
@@ -118,6 +120,7 @@ const CrudProductos = () => {
                 required
               />
             </Form.Group>
+
             <Form.Group className="mb-2">
               <Form.Label>Descripción</Form.Label>
               <Form.Control
@@ -126,6 +129,7 @@ const CrudProductos = () => {
                 required
               />
             </Form.Group>
+
             <Form.Group className="mb-2">
               <Form.Label>Precio</Form.Label>
               <Form.Control
@@ -135,15 +139,7 @@ const CrudProductos = () => {
                 required
               />
             </Form.Group>
-            <Form.Group className="mb-2">
-              <Form.Label>Stock</Form.Label>
-              <Form.Control
-                type="number"
-                value={form.stock}
-                onChange={e => setForm({ ...form, stock: Number(e.target.value) })}
-                required
-              />
-            </Form.Group>
+
             <Form.Group className="mb-2">
               <Form.Label>Imagen (URL)</Form.Label>
               <Form.Control
@@ -152,7 +148,9 @@ const CrudProductos = () => {
                 required
               />
             </Form.Group>
+
             <Button type="submit" className="mt-2">Guardar</Button>
+
           </Form>
         </Modal.Body>
       </Modal>
